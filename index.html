@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Levisque — Духовный ментор и проводник трансформаций</title>
-  <meta name="description" content="Помогаю выйти из самокопания в состояние, где всё начинает получаться. Глубинные трансформации, работа с установками, выход из повторяющихся сценариев. Запись на бесплатную диагностику.">
+  <meta name="description" content="Глубинные трансформации, которые меняют не только внутреннее — меняется и реальность вокруг. Работа с установками, которые нельзя выявить напрямую. Диагностика и личные сессии.">
   <meta property="og:title" content="Levisque — Духовный ментор">
-  <meta property="og:description" content="Выйди из самокопания — войди в состояние, где всё получается">
+  <meta property="og:description" content="Глубинные трансформации. Меняется внутреннее — меняется реальность.">
   <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Grotesk:wght@500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,12 +24,12 @@
     <nav class="nav" id="nav">
       <a href="#about">Подход</a>
       <a href="#services">Услуги</a>
-      <a href="#process">Как работаем</a>
+      <a href="#process">Процесс</a>
       <a href="#reviews">Отзывы</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Контакты</a>
     </nav>
-    <a href="#diagnostic" class="btn btn--accent header__cta">Диагностика бесплатно</a>
+    <a href="#diagnostic" class="btn btn--accent header__cta">Записаться</a>
     <button class="burger" id="burger" aria-label="Меню">
       <span></span><span></span><span></span>
     </button>
@@ -39,176 +38,228 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero__bg-decor" aria-hidden="true">
-    <svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="400" cy="300" r="280" stroke="#7c3aed" stroke-opacity="0.07" stroke-width="1"/>
-      <circle cx="400" cy="300" r="200" stroke="#7c3aed" stroke-opacity="0.06" stroke-width="1"/>
-      <circle cx="400" cy="300" r="120" stroke="#7c3aed" stroke-opacity="0.08" stroke-width="1"/>
-    </svg>
-  </div>
+  <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+  <div class="hero__dots" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div class="hero__content">
-      <div class="hero__badge">Духовный ментор · Проводник</div>
-      <h1 class="hero__title">Выйди из самокопания —<br><em>в состояние,<br>где всё получается</em></h1>
-      <p class="hero__sub">Меняю не только внутреннее — меняется и внешнее. Глубинная работа с установками, которые нельзя выявить напрямую. Это заменяет годы терапии у психолога.</p>
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Духовный ментор · Проводник
+      </div>
+      <h1 class="hero__title">
+        Я работаю там,<br>
+        <em>где слова заканчиваются</em>
+      </h1>
+      <p class="hero__lead">Годами ходить к психологу, понимать всё — и ничего не меняется. Потому что блоки живут глубже слов. Я вхожу туда напрямую.</p>
+      <p class="hero__sub">Меняется внутреннее — меняется реальность. Клиенты приходят с запросом на деньги, отношения или выход из кризиса, а уходят с другой жизнью.</p>
       <div class="hero__ctas">
         <a href="#diagnostic" class="btn btn--accent btn--lg">Записаться на диагностику</a>
-        <a href="#services" class="btn btn--outline btn--lg">Узнать про услуги</a>
+        <a href="#about" class="btn btn--ghost btn--lg">Узнать подробнее</a>
       </div>
       <div class="hero__stats">
         <div class="hero__stat">
-          <span class="hero__stat-num" data-target="50">0</span><span>+</span>
-          <span class="hero__stat-label">клиентов<br>трансформировано</span>
+          <span class="hero__stat-num" data-target="50">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">клиентов прошли трансформацию</span>
         </div>
         <div class="hero__stat-div"></div>
         <div class="hero__stat">
-          <span class="hero__stat-num" data-target="3">0</span><span>+</span>
-          <span class="hero__stat-label">лет практики<br>и развития</span>
+          <span class="hero__stat-num" data-target="3">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">года практики и развития</span>
         </div>
         <div class="hero__stat-div"></div>
         <div class="hero__stat">
-          <span class="hero__stat-num" data-target="12">0</span><span></span>
-          <span class="hero__stat-label">запросов:<br>деньги, отношения, миссия…</span>
-        </div>
-        <div class="hero__stat-div"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num" data-target="100">0</span><span>%</span>
-          <span class="hero__stat-label">клиентов отмечают<br>внешние изменения</span>
+          <span class="hero__stat-num" data-target="1">0</span><span class="hero__stat-plus"></span>
+          <span class="hero__stat-label">сессия заменяет годы терапии</span>
         </div>
       </div>
     </div>
-    <div class="hero__card-wrap">
-      <div class="hero__card">
-        <div class="hero__card-icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="#7c3aed" stroke-width="1.5"/><path d="M24 10C24 10 14 18 14 27C14 32.5 18.5 37 24 37C29.5 37 34 32.5 34 27C34 18 24 10 24 10Z" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/><circle cx="24" cy="27" r="4" fill="#7c3aed"/></svg>
+    <div class="hero__photo-wrap">
+      <div class="hero__photo-frame">
+        <img src="photo1.jpg" alt="Levisque" class="hero__photo" onerror="this.style.display='none';document.getElementById('photo-stub-1').style.display='flex'">
+        <div class="hero__photo-stub" id="photo-stub-1">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="10" stroke="rgba(167,139,250,0.5)" stroke-width="1.5"/><path d="M8 42C8 34.3 15.2 28 24 28C32.8 28 40 34.3 40 42" stroke="rgba(167,139,250,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>Фото 1</span>
         </div>
-        <p class="hero__card-title">Бесплатная диагностика</p>
-        <p class="hero__card-text">Напиши мне — пришлю чекап по фото и разберём твой запрос</p>
-        <a href="#diagnostic" class="btn btn--accent btn--sm">Получить чекап</a>
+        <div class="hero__photo-accent"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT / ПРИНЦИПЫ -->
+<!-- О ПОДХОДЕ -->
 <section class="about section" id="about">
+  <div class="container about__inner">
+    <div class="about__photo-wrap">
+      <div class="about__photo-frame">
+        <img src="photo2.jpg" alt="Levisque" class="about__photo" onerror="this.style.display='none';document.getElementById('photo-stub-2').style.display='flex'">
+        <div class="about__photo-stub" id="photo-stub-2">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="10" stroke="rgba(167,139,250,0.5)" stroke-width="1.5"/><path d="M8 42C8 34.3 15.2 28 24 28C32.8 28 40 34.3 40 42" stroke="rgba(167,139,250,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>Фото 2</span>
+        </div>
+        <div class="about__quote-card">
+          <p>«Изменить жизнь через разговор — это как лечить тело словами. Я иду туда, где живут программы.»</p>
+        </div>
+      </div>
+    </div>
+    <div class="about__content">
+      <span class="section-label">Мой подход</span>
+      <h2 class="section-title">Почему разговор<br><em>не достаточен</em></h2>
+      <p class="about__text">Психолог разбирает прошлое словами. Коуч ставит цели и мотивирует. Но установки, которые создают повторяющиеся сценарии в жизни — недоступны через разговор. Они живут в теле, в поле, в слоях, к которым ум не имеет прямого доступа.</p>
+      <p class="about__text">Я работаю с этим напрямую. Без лишних слов, без годов анализа. Во время сессии происходит то, что можно только почувствовать — сдвиг в самом основании.</p>
+      <p class="about__text">После — меняется не только самоощущение. Меняются обстоятельства. Приходят деньги, которые не шли. Решаются ситуации, которые стояли годами. Это не метафора — это механика трансформации.</p>
+      <div class="about__tags">
+        <span class="tag">Деньги и реализация</span>
+        <span class="tag">Отношения</span>
+        <span class="tag">Выход из кризиса</span>
+        <span class="tag">Миссия</span>
+        <span class="tag">Переезд</span>
+        <span class="tag">Продажа недвижимости</span>
+        <span class="tag">Повторяющиеся сценарии</span>
+        <span class="tag">Самореализация</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРИНЦИПЫ -->
+<section class="principles section" id="principles">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">Мой подход</span>
-      <h2 class="section-title">Почему это работает<br><em>там, где терапия буксует</em></h2>
-      <p class="section-sub">Я работаю с глубинными установками — теми, которые не видны на поверхности и не выявляются стандартными методами. Именно они управляют твоими сценариями.</p>
+      <span class="section-label">Как это работает</span>
+      <h2 class="section-title">Не терапия.<br><em>Трансформация.</em></h2>
     </div>
     <div class="principles-grid">
       <div class="principle">
+        <div class="principle__num">01</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 3L21.5 13.5H33L23.5 20L27 30.5L18 24L9 30.5L12.5 20L3 13.5H14.5L18 3Z" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 11 8 18C8 22.4 11.6 26 16 26C20.4 26 24 22.4 24 18C24 11 16 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="16" cy="18" r="3" fill="currentColor"/></svg>
         </div>
-        <h3 class="principle__title">Работаем с корнем</h3>
-        <p class="principle__text">Не с симптомами — с первопричиной. Глубинные установки, которые создают повторяющиеся сценарии в жизни.</p>
+        <h3 class="principle__title">Диагностика по фото</h3>
+        <p class="principle__text">Я считываю состояние человека по фотографии — это реальный инструмент, не интуиция. Позволяет увидеть блоки, которые сам человек не замечает и не может назвать.</p>
       </div>
       <div class="principle">
+        <div class="principle__num">02</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="15" stroke="#7c3aed" stroke-width="1.5"/><path d="M12 18C12 14.7 14.7 12 18 12C21.3 12 24 14.7 24 18C24 21.3 21.3 24 18 24" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="18" r="3" fill="#7c3aed"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M10 16C10 12.7 12.7 10 16 10C19.3 10 22 12.7 22 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="3" fill="currentColor"/></svg>
         </div>
-        <h3 class="principle__title">Внутреннее → Внешнее</h3>
-        <p class="principle__text">Когда меняется внутреннее — меняется реальность вокруг. Клиенты отмечают изменения в деньгах, отношениях, здоровье.</p>
+        <h3 class="principle__title">Работа с первопричиной</h3>
+        <p class="principle__text">Не симптом — корень. Пока блок живёт в основании, любые действия на поверхности будут давать временный эффект. Мы убираем саму программу.</p>
       </div>
       <div class="principle">
+        <div class="principle__num">03</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 30L18 6L30 30" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 23H26" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 26L16 6L26 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
-        <h3 class="principle__title">Скорость результата</h3>
-        <p class="principle__text">Одна сессия даёт то, над чем в обычной терапии работают годами. Ты чувствуешь сдвиг уже в процессе работы.</p>
+        <h3 class="principle__title">Скорость изменений</h3>
+        <p class="principle__text">Два года терапии — и человек понимает всё, но ничего не меняется. Одна сессия — и ситуация сдвигается. Потому что мы работаем там, где изменения происходят быстро.</p>
       </div>
       <div class="principle">
+        <div class="principle__num">04</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="6" y="12" width="24" height="18" rx="3" stroke="#7c3aed" stroke-width="1.5"/><path d="M12 12V9C12 6.8 14.7 5 18 5C21.3 5 24 6.8 24 9V12" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="21" r="3" fill="#7c3aed"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 24V14M14 24V8M20 24V16M26 24V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
-        <h3 class="principle__title">Авторская методика</h3>
-        <p class="principle__text">Не типовые протоколы — живая работа с твоей уникальной системой. Каждый запрос разбирается индивидуально.</p>
+        <h3 class="principle__title">Внешние результаты</h3>
+        <p class="principle__text">Внутренняя работа проявляется снаружи. Это не «вы будете лучше себя чувствовать» — это конкретные изменения в обстоятельствах жизни, деньгах, отношениях, событиях.</p>
       </div>
       <div class="principle">
+        <div class="principle__num">05</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 6C18 6 8 16 8 24C8 29.5 12.5 33 18 33C23.5 33 28 29.5 28 24C28 16 18 6 18 6Z" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 16H10M22 16H26M16 6V10M16 22V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
         </div>
         <h3 class="principle__title">Любой запрос</h3>
-        <p class="principle__text">Деньги, реализация, миссия, отношения, переезд, выход из кризиса — даже продажа недвижимости. Трансформация работает в любой области.</p>
+        <p class="principle__text">Деньги, карьера, отношения, переезд, продажа квартиры, выход из тупика — трансформация работает в любой сфере, потому что источник всегда один: внутренняя программа.</p>
       </div>
       <div class="principle">
+        <div class="principle__num">06</div>
         <div class="principle__icon" aria-hidden="true">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 18H12M24 18H30M18 6V12M18 24V30" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="18" r="7" stroke="#7c3aed" stroke-width="1.5"/></svg>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4L20 12H28L22 17L24 26L16 21L8 26L10 17L4 12H12L16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
-        <h3 class="principle__title">Выход из цикла</h3>
-        <p class="principle__text">Повторяющиеся сценарии — это программы, не судьба. Мы выявляем и переписываем их на уровне, где они живут.</p>
+        <h3 class="principle__title">Индивидуально</h3>
+        <p class="principle__text">Нет протокола, по которому всех проводят одинаково. Каждый человек — уникальная система. Работа полностью адаптируется под Вас и Ваш конкретный запрос.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- УСЛУГИ -->
-<section class="services section section--alt" id="services">
+<section class="services section" id="services">
   <div class="container">
     <div class="section-head">
       <span class="section-label">Форматы работы</span>
-      <h2 class="section-title">Выбери свой формат</h2>
-      <p class="section-sub">Начать можно с бесплатной диагностики — пришлю чекап по фото и разберём твой запрос</p>
+      <h2 class="section-title">Выберите свой формат</h2>
     </div>
     <div class="services-grid">
-      <div class="service service--free">
-        <div class="service__badge">Бесплатно</div>
+
+      <div class="service">
+        <div class="service__tag">Старт</div>
         <h3 class="service__title">Диагностика</h3>
-        <p class="service__desc">Первый шаг — чекап по фото под любой запрос. Я разберу твою ситуацию и покажу, что блокирует движение. Без обязательств.</p>
+        <p class="service__desc">Первый шаг — прежде чем двигаться дальше, нужно понять, что именно блокирует движение в Вашей ситуации. Диагностика по фото + разбор запроса.</p>
         <ul class="service__list">
           <li>Чекап по фото</li>
-          <li>Разбор твоего запроса</li>
-          <li>Рекомендации по дальнейшим шагам</li>
+          <li>Разбор Вашего запроса</li>
+          <li>Формат: голосовые или созвон 30 минут</li>
+          <li>Что именно мешает — конкретно</li>
+          <li>Рекомендации по следующему шагу</li>
         </ul>
-        <div class="service__price">Бесплатно</div>
-        <a href="#diagnostic" class="btn btn--accent btn--full">Записаться</a>
+        <div class="service__price-row">
+          <span class="service__price">4 000 ₽</span>
+        </div>
+        <a href="#diagnostic" class="btn btn--outline-accent btn--full">Записаться</a>
       </div>
+
       <div class="service service--featured">
-        <div class="service__badge">Популярное</div>
+        <div class="service__glow" aria-hidden="true"></div>
+        <div class="service__tag service__tag--accent">Основное</div>
         <h3 class="service__title">Личная сессия</h3>
-        <p class="service__desc">Глубинная работа с одним запросом — деньги, отношения, реализация, кризис, переезд, продажа недвижимости. Один сеанс = сдвиг, который ты почувствуешь сразу.</p>
+        <p class="service__desc">Глубинная работа с одним запросом. Один сеанс даёт то, над чем в обычной терапии работают годами. Сдвиг ощущается уже в процессе.</p>
         <ul class="service__list">
-          <li>1 сессия (90–120 минут)</li>
-          <li>Глубинная диагностика запроса</li>
-          <li>Работа с корневыми установками</li>
+          <li>1 сессия — 90–120 минут</li>
+          <li>Диагностика запроса в начале</li>
+          <li>Работа с корневой установкой</li>
           <li>Трансформация в прямом эфире</li>
           <li>Поддержка 3 дня после</li>
+          <li>Любой запрос: деньги, отношения, кризис, переезд</li>
         </ul>
-        <div class="service__price">12 000 ₽</div>
+        <div class="service__price-row">
+          <span class="service__price">12 000 ₽</span>
+        </div>
         <a href="#diagnostic" class="btn btn--accent btn--full">Записаться</a>
       </div>
+
       <div class="service">
-        <div class="service__badge">Максимум</div>
+        <div class="service__tag">Максимум</div>
         <h3 class="service__title">Сопровождение месяц</h3>
-        <p class="service__desc">Полное погружение. Ежедневная поддержка и 4 сессии за месяц. Для тех, кто готов к системным изменениям и хочет выйти на новый уровень раз и навсегда.</p>
+        <p class="service__desc">Полное погружение. Для тех, кто готов к системным изменениям и хочет выйти на другой уровень раз и навсегда.</p>
         <ul class="service__list">
-          <li>4 глубинные сессии</li>
+          <li>4 глубинные сессии за месяц</li>
           <li>Ежедневная поддержка в мессенджере</li>
           <li>Работа с несколькими запросами</li>
-          <li>Личные практики под тебя</li>
-          <li>Поддержка после окончания</li>
+          <li>Личные практики под Вашу ситуацию</li>
+          <li>Поддержка после завершения</li>
+          <li>Системные изменения, которые остаются</li>
         </ul>
-        <div class="service__price">60 000 ₽</div>
-        <a href="#diagnostic" class="btn btn--outline btn--full">Записаться</a>
+        <div class="service__price-row">
+          <span class="service__price">60 000 ₽</span>
+        </div>
+        <a href="#diagnostic" class="btn btn--outline-accent btn--full">Записаться</a>
       </div>
+
     </div>
 
     <div class="coming-soon">
       <p class="coming-soon__label">Скоро</p>
       <div class="coming-soon__items">
         <div class="coming-soon__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6C5.4 2 5 2.4 5 3V21C5 21.6 5.4 22 6 22H18C18.6 22 19 21.6 19 21V7L14 2Z" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7H19" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M11.5 2H5C4.4 2 4 2.4 4 3V17C4 17.6 4.4 18 5 18H15C15.6 18 16 17.6 16 17V6.5L11.5 2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.5 2V6.5H16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           PDF / Видео-гайд для самостоятельной работы
         </div>
         <div class="coming-soon__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#7c3aed" stroke-width="1.5"/><path d="M8 21H16M12 17V21" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 17H13M10 14V17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
           Большой курс на 2–4 недели
         </div>
         <div class="coming-soon__item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 17.9 16.1 17 15 17H9C7.9 17 7 17.9 7 19V21" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#7c3aed" stroke-width="1.5"/><path d="M5 5C7.8 2.8 10.8 2 12 2C13.2 2 16.2 2.8 19 5" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C10 2 4 7 4 12C4 15.3 6.7 18 10 18C13.3 18 16 15.3 16 12C16 7 10 2 10 2Z" stroke="currentColor" stroke-width="1.2"/></svg>
           Оффлайн практики в Москве
         </div>
       </div>
@@ -221,17 +272,17 @@
   <div class="container">
     <div class="section-head">
       <span class="section-label">Прайс</span>
-      <h2 class="section-title">Что и сколько стоит</h2>
+      <h2 class="section-title">Стоимость</h2>
     </div>
     <div class="price-table-wrap">
       <table class="price-table">
         <tbody>
           <tr>
-            <td class="price-table__name">Диагностика (чекап по фото)</td>
-            <td class="price-table__price">Бесплатно</td>
+            <td class="price-table__name">Диагностика (чекап по фото + разбор запроса, 30 мин)</td>
+            <td class="price-table__price">4 000 ₽</td>
           </tr>
           <tr>
-            <td class="price-table__name">Личная сессия (90–120 мин)</td>
+            <td class="price-table__name">Личная сессия (90–120 минут)</td>
             <td class="price-table__price">12 000 ₽</td>
           </tr>
           <tr>
@@ -247,11 +298,11 @@
             <td class="price-table__price">Уточняется</td>
           </tr>
           <tr>
-            <td class="price-table__name">Большой курс 2–4 недели (скоро)</td>
+            <td class="price-table__name">Курс 2–4 недели (скоро)</td>
             <td class="price-table__price">Уточняется</td>
           </tr>
           <tr>
-            <td class="price-table__name">Оффлайн практика в Москве (скоро)</td>
+            <td class="price-table__name">Оффлайн практики, Москва (скоро)</td>
             <td class="price-table__price">Уточняется</td>
           </tr>
         </tbody>
@@ -261,46 +312,46 @@
 </section>
 
 <!-- ПРОЦЕСС -->
-<section class="process section section--alt" id="process">
+<section class="process section" id="process">
   <div class="container">
     <div class="section-head">
       <span class="section-label">Как мы работаем</span>
-      <h2 class="section-title">5 шагов<br><em>к трансформации</em></h2>
+      <h2 class="section-title">Путь к трансформации</h2>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step__num">01</div>
         <div class="step__body">
           <h3 class="step__title">Диагностика</h3>
-          <p class="step__text">Пишешь мне в Telegram, описываешь запрос. Я делаю чекап по фото — показываю, что сейчас блокирует и какой формат работы подойдёт. Это бесплатно.</p>
+          <p class="step__text">Вы пишете в Telegram, описываете запрос или ситуацию. Я делаю чекап по фото — смотрю, что именно блокирует движение в Вашем случае. Уже здесь появляется ясность.</p>
         </div>
       </div>
       <div class="step">
         <div class="step__num">02</div>
         <div class="step__body">
           <h3 class="step__title">Первая сессия</h3>
-          <p class="step__text">Выходим на звонок. Я погружаюсь в твою систему — ищу глубинные установки, которые управляют сценарием. Ты начинаешь чувствовать сдвиг уже в процессе.</p>
+          <p class="step__text">Мы выходим на созвон. Я погружаюсь в Вашу систему — ищу не симптом, а первопричину. Что именно создаёт сценарий, который повторяется? Где живёт блок?</p>
         </div>
       </div>
       <div class="step">
         <div class="step__num">03</div>
         <div class="step__body">
-          <h3 class="step__title">Трансформация</h3>
-          <p class="step__text">Работаем с корнем — переписываем установки на уровне, где они живут. Это не разговор о проблеме — это прямое изменение программы.</p>
+          <h3 class="step__title">Глубинная работа</h3>
+          <p class="step__text">Работаем с установкой на том уровне, где она существует — не через разговор, а напрямую. Вы чувствуете изменение в процессе. Это не анализ — это трансформация.</p>
         </div>
       </div>
       <div class="step">
         <div class="step__num">04</div>
         <div class="step__body">
           <h3 class="step__title">Интеграция</h3>
-          <p class="step__text">Практики под тебя. Поддержка после сессии. Помогаю закрепить изменения, чтобы они вошли в жизнь, а не просто были красивым инсайтом.</p>
+          <p class="step__text">После сессии я остаюсь на связи. Практики под Вашу ситуацию. Поддержка, пока изменения закрепляются в жизни, а не только в ощущениях.</p>
         </div>
       </div>
       <div class="step">
         <div class="step__num">05</div>
         <div class="step__body">
-          <h3 class="step__title">Результат во внешнем</h3>
-          <p class="step__text">Внутренняя работа проявляется снаружи — в деньгах, отношениях, карьере, самочувствии. Это не метафора. Клиенты видят конкретные изменения в жизни.</p>
+          <h3 class="step__title">Изменения во внешнем</h3>
+          <p class="step__text">Внутренняя работа проявляется в обстоятельствах. Деньги начинают двигаться. Ситуации разрешаются. Люди появляются. Жизнь перестаёт стоять на месте.</p>
         </div>
       </div>
     </div>
@@ -311,13 +362,13 @@
 <section class="reviews section" id="reviews">
   <div class="container">
     <div class="section-head">
-      <span class="section-label">Отзывы</span>
-      <h2 class="section-title">Что говорят клиенты</h2>
+      <span class="section-label">Опыт клиентов</span>
+      <h2 class="section-title">Что изменилось</h2>
     </div>
     <div class="reviews-grid">
       <div class="review">
         <div class="review__stars">★★★★★</div>
-        <p class="review__text">«После одной сессии пришёл крупный клиент, которого я ждала полгода. Я не верила, что это связано — но внутри что-то принципиально изменилось. Теперь верю.»</p>
+        <p class="review__text">«Я ходила к психологу два года. Понимала причины всего, могла объяснить любой свой паттерн — и ничего не менялось. После второй сессии пришёл клиент, которого я ждала полгода. Я не верила, что это связано. Теперь верю.»</p>
         <div class="review__author">
           <div class="review__avatar">М</div>
           <div>
@@ -328,22 +379,22 @@
       </div>
       <div class="review">
         <div class="review__stars">★★★★★</div>
-        <p class="review__text">«Прошёл 2 года терапии — говорили, разбирали детство, понимал всё. Но ничего не менялось. После месяца с Levisque произошло то, чего не было за 2 года. Это другой уровень.»</p>
+        <p class="review__text">«Я пришёл с запросом на продажу квартиры — она стояла 8 месяцев. Поработали один раз. Через три недели нашёлся покупатель. Для меня это был переломный момент в понимании того, как вообще работает реальность.»</p>
         <div class="review__author">
           <div class="review__avatar">А</div>
           <div>
-            <div class="review__name">Андрей, 34 года</div>
-            <div class="review__topic">Запрос: выход из кризиса</div>
+            <div class="review__name">Андрей, 41 год</div>
+            <div class="review__topic">Запрос: продажа недвижимости</div>
           </div>
         </div>
       </div>
       <div class="review">
         <div class="review__stars">★★★★★</div>
-        <p class="review__text">«Помогла разобраться с отношениями, которые заходили в тупик по одному и тому же сценарию. Теперь понимаю откуда это — и главное, этот паттерн больше не повторяется.»</p>
+        <p class="review__text">«Одни и те же отношения, разные люди — я видела паттерн, но не могла выйти. После месяца работы что-то фундаментально изменилось внутри. Сейчас у меня другой тип отношений, которого раньше просто не было в моей жизни.»</p>
         <div class="review__author">
           <div class="review__avatar">Е</div>
           <div>
-            <div class="review__name">Елена, 29 лет</div>
+            <div class="review__name">Елена, 31 год</div>
             <div class="review__topic">Запрос: отношения</div>
           </div>
         </div>
@@ -353,7 +404,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="faq section section--alt" id="faq">
+<section class="faq section" id="faq">
   <div class="container">
     <div class="section-head">
       <span class="section-label">Вопросы</span>
@@ -363,37 +414,37 @@
       <details class="faq__item">
         <summary class="faq__q">С какими запросами можно обратиться?</summary>
         <div class="faq__a">
-          <p>С любыми. Деньги, реализация, миссия, отношения, переезд, выход из кризиса — и даже продажа недвижимости. Трансформация работает там, где есть внутренний блок, который мешает внешнему результату. Если есть сомнение — напишите, разберём на диагностике.</p>
+          <p>С любыми, где есть ощущение, что что-то внутри мешает внешнему результату. Деньги, реализация, карьера, миссия, отношения, переезд, выход из затяжного кризиса, продажа недвижимости. Если не уверены — напишите, разберёмся на диагностике.</p>
         </div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Чем это отличается от психолога или коуча?</summary>
         <div class="faq__a">
-          <p>Психолог работает со словами и осознанием. Коуч — с целями и действиями. Я работаю с глубинными установками, которые управляют и мыслями, и поведением, и реальностью. Одна сессия даёт то, на что у терапевта уходят годы — потому что мы идём к первопричине, а не к симптому.</p>
+          <p>Психолог работает со словами и осознанием — Вы понимаете больше, но не всегда это меняет жизнь. Коуч помогает двигаться к целям. Я работаю с тем, что стоит за и тем, и другим — с программами, которые определяют, что вообще возможно в Вашей реальности. Это другой уровень вмешательства.</p>
         </div>
       </details>
       <details class="faq__item">
-        <summary class="faq__q">Что такое чекап по фото?</summary>
+        <summary class="faq__q">Что такое диагностика по фото и как это работает?</summary>
         <div class="faq__a">
-          <p>По фотографии я считываю информацию об энергетическом состоянии, блоках и установках. Это первый шаг — позволяет увидеть, что именно мешает в твоём случае, и понять какой запрос разбирать в первую очередь. Это бесплатно, без обязательств.</p>
+          <p>Фотография — это не просто изображение, это информация о состоянии человека. Я считываю по ней энергетический фон, блоки, доминирующие установки. Это позволяет увидеть то, что человек не замечает в себе и что невозможно выявить только через разговор. Диагностика занимает 30 минут в формате голосовых или созвона.</p>
         </div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Как проходят сессии — онлайн или офлайн?</summary>
         <div class="faq__a">
-          <p>Сессии проходят онлайн — видеозвонок. Это никак не снижает глубину работы. В ближайшее время планирую оффлайн-практики в Москве — следи за анонсами в Telegram-канале @levisque_space.</p>
+          <p>Сессии проходят онлайн — видеозвонок. Глубина работы от формата не зависит. В ближайшее время появятся оффлайн-практики в Москве — следите за анонсами в канале <a href="https://t.me/levisque_space" target="_blank">@levisque_space</a>.</p>
         </div>
       </details>
       <details class="faq__item">
-        <summary class="faq__q">Когда будут результаты?</summary>
+        <summary class="faq__q">Когда будут первые результаты?</summary>
         <div class="faq__a">
-          <p>Первый сдвиг — уже во время сессии. Внешние изменения происходят в течение нескольких дней или недель после работы — в зависимости от запроса и глубины блока. Месячное сопровождение даёт системные изменения, которые остаются надолго.</p>
+          <p>Внутренний сдвиг — уже в процессе сессии. Внешние изменения в обстоятельствах — в течение нескольких дней или недель, в зависимости от запроса и глубины блока. Месячное сопровождение даёт системные изменения, которые остаются надолго.</p>
         </div>
       </details>
       <details class="faq__item">
         <summary class="faq__q">Как записаться?</summary>
         <div class="faq__a">
-          <p>Самый быстрый способ — написать в Telegram: <a href="https://t.me/levisque_space" target="_blank">@levisque_space</a>. Или заполнить форму ниже — я напишу сам и пришлю чекап по фото. Начинать страшно, но в этом и смысл — разобраться с тем, что мешает двигаться.</p>
+          <p>Напишите в Telegram: <a href="https://t.me/levisque_space" target="_blank">@levisque_space</a> — или заполните форму ниже. Я отвечаю в течение дня.</p>
         </div>
       </details>
     </div>
@@ -402,34 +453,35 @@
 
 <!-- ФОРМА -->
 <section class="diagnostic section" id="diagnostic">
+  <div class="diagnostic__glow" aria-hidden="true"></div>
   <div class="container">
     <div class="diagnostic__inner">
       <div class="diagnostic__info">
-        <span class="section-label">Начать</span>
-        <h2 class="section-title">Бесплатная диагностика</h2>
-        <p class="diagnostic__sub">Заполни форму — я напишу тебе, пришлю чекап по фото и мы разберём твой запрос. Без обязательств.</p>
+        <span class="section-label">Записаться</span>
+        <h2 class="section-title">Начните с диагностики</h2>
+        <p class="diagnostic__sub">Заполните форму — я напишу Вам, мы проведём диагностику по фото и разберём Вашу ситуацию. Это первый шаг к изменениям.</p>
         <div class="diagnostic__features">
           <div class="diagnostic__feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#7c3aed" stroke-width="1.5"/><path d="M6 10L9 13L14 8" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Абсолютно бесплатно
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#a78bfa" stroke-width="1.3"/><path d="M5.5 9L8 11.5L12.5 7" stroke="#a78bfa" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Диагностика — 4 000 ₽ (30 минут)
           </div>
           <div class="diagnostic__feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#7c3aed" stroke-width="1.5"/><path d="M6 10L9 13L14 8" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Чекап по фото под твой запрос
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#a78bfa" stroke-width="1.3"/><path d="M5.5 9L8 11.5L12.5 7" stroke="#a78bfa" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Голосовые сообщения или созвон
           </div>
           <div class="diagnostic__feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#7c3aed" stroke-width="1.5"/><path d="M6 10L9 13L14 8" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#a78bfa" stroke-width="1.3"/><path d="M5.5 9L8 11.5L12.5 7" stroke="#a78bfa" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Чекап по фото + разбор запроса
+          </div>
+          <div class="diagnostic__feat">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#a78bfa" stroke-width="1.3"/><path d="M5.5 9L8 11.5L12.5 7" stroke="#a78bfa" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Отвечаю в течение дня
-          </div>
-          <div class="diagnostic__feat">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#7c3aed" stroke-width="1.5"/><path d="M6 10L9 13L14 8" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Без давления и навязывания
           </div>
         </div>
         <div class="diagnostic__direct">
-          <p>Или напиши напрямую:</p>
+          <span>Или напишите напрямую:</span>
           <a href="https://t.me/levisque_space" class="tg-link" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18.3C14.6 18.3 18.3 14.6 18.3 10C18.3 5.4 14.6 1.7 10 1.7C5.4 1.7 1.7 5.4 1.7 10C1.7 14.6 5.4 18.3 10 18.3Z" stroke="#7c3aed" stroke-width="1.3"/><path d="M7 10L9.5 12.5L13.5 8" stroke="#7c3aed" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 16.5C13.1 16.5 16.5 13.1 16.5 9C16.5 4.9 13.1 1.5 9 1.5C4.9 1.5 1.5 4.9 1.5 9C1.5 13.1 4.9 16.5 9 16.5Z" stroke="#a78bfa" stroke-width="1.3"/><path d="M6 9L8.5 11.5L12 7.5" stroke="#a78bfa" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
             @levisque_space
           </a>
         </div>
@@ -438,7 +490,7 @@
         <form id="leadForm" class="form" novalidate>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form__group">
-            <label class="form__label" for="name">Как тебя зовут</label>
+            <label class="form__label" for="name">Ваше имя</label>
             <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required>
           </div>
           <div class="form__group">
@@ -446,11 +498,11 @@
             <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
           </div>
           <div class="form__group">
-            <label class="form__label" for="comment">Твой запрос (в двух словах)</label>
-            <textarea class="form__input form__textarea" id="comment" name="comment" placeholder="Деньги, отношения, реализация, кризис — что сейчас актуально?" rows="3"></textarea>
+            <label class="form__label" for="comment">Ваш запрос</label>
+            <textarea class="form__input form__textarea" id="comment" name="comment" placeholder="Деньги, отношения, реализация, кризис — опишите ситуацию в двух словах" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn--accent btn--full btn--lg">Получить диагностику бесплатно</button>
-          <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+          <button type="submit" class="btn btn--accent btn--full btn--lg">Записаться на диагностику</button>
+          <p class="form__note">Нажимая кнопку, Вы соглашаетесь с обработкой персональных данных</p>
         </form>
       </div>
     </div>
@@ -467,7 +519,7 @@
     <div class="contacts-grid">
       <a href="https://t.me/levisque_space" class="contact-card" target="_blank">
         <div class="contact-card__icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 25.7C20.4 25.7 25.7 20.4 25.7 14C25.7 7.6 20.4 2.3 14 2.3C7.6 2.3 2.3 7.6 2.3 14C2.3 20.4 7.6 25.7 14 25.7Z" stroke="#7c3aed" stroke-width="1.5"/><path d="M8.5 14L11 16.5L19.5 9.5" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 23.8C19.5 23.8 24.8 18.5 24.8 12C24.8 5.5 19.5 0.2 13 0.2C6.5 0.2 1.2 5.5 1.2 12C1.2 18.5 6.5 23.8 13 23.8Z" stroke="currentColor" stroke-width="1.3"/><path d="M8 12L10.8 14.8L18 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div>
           <div class="contact-card__label">Telegram</div>
@@ -476,7 +528,7 @@
       </a>
       <a href="https://www.instagram.com/levisque" class="contact-card" target="_blank">
         <div class="contact-card__icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="22" rx="6" stroke="#7c3aed" stroke-width="1.5"/><circle cx="14" cy="14" r="5" stroke="#7c3aed" stroke-width="1.5"/><circle cx="20.5" cy="7.5" r="1.5" fill="#7c3aed"/></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="2" width="22" height="22" rx="6" stroke="currentColor" stroke-width="1.3"/><circle cx="13" cy="13" r="5" stroke="currentColor" stroke-width="1.3"/><circle cx="19.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
         </div>
         <div>
           <div class="contact-card__label">Instagram</div>
@@ -485,7 +537,7 @@
       </a>
       <a href="https://t.me/levisque_space" class="contact-card" target="_blank">
         <div class="contact-card__icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 5H23L14 16L5 5Z" stroke="#7c3aed" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 5L14 16V23L19 18V16" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M5 5H21L13 15L5 5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M5 5L13 15V21L18 17V15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div>
           <div class="contact-card__label">Telegram-канал</div>
@@ -494,7 +546,7 @@
       </a>
       <a href="https://vk.com/levisque" class="contact-card" target="_blank">
         <div class="contact-card__icon">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="22" rx="4" stroke="#7c3aed" stroke-width="1.5"/><path d="M7 10.5H10.5C10.5 10.5 10.5 14.5 13 15.5C15.5 16.5 16 14 16 14V10.5H19.5C19.5 10.5 19 19.5 14 19.5C9 19.5 7 10.5 7 10.5Z" stroke="#7c3aed" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="2" y="2" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.3"/><path d="M6.5 9.5H9.5C9.5 9.5 9.5 13.5 12 14.5C14.5 15.5 15 13 15 13V9.5H18.5C18.5 9.5 17.5 18.5 13 18.5C8.5 18.5 6.5 9.5 6.5 9.5Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
         </div>
         <div>
           <div class="contact-card__label">ВКонтакте</div>
@@ -513,14 +565,14 @@
     <div class="footer__links">
       <a href="#about">Подход</a>
       <a href="#services">Услуги</a>
-      <a href="#diagnostic">Диагностика</a>
+      <a href="#diagnostic">Записаться</a>
     </div>
   </div>
 </footer>
 
 <!-- FAB -->
 <a href="https://t.me/levisque_space" class="fab" target="_blank" aria-label="Написать в Telegram">
-  <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 24C19.1 24 24 19.1 24 13C24 6.9 19.1 2 13 2C6.9 2 2 6.9 2 13C2 19.1 6.9 24 13 24Z" fill="#7c3aed"/><path d="M8 13L11 15.5L18 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#a78bfa"/><path d="M7.5 12L10.5 15L16.5 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </a>
 
 <script src="script.js"></script>
